@@ -54,4 +54,17 @@ public class MommifierTest {
         // Then
         assertEquals("aeiou", result);
     }
+
+    @Test
+    void should_return_string_insert_mommy_when_vowels_number_more_than_30_percent_and_contains_continuous_vowels() {
+        // Given
+        Mommifier mommifier = new Mommifier();
+        String stringWithNumberOfVowelsMoreThan30AndContainsContinuousVowels = "aaa";
+
+        // When
+        String result = mommifier.mommy(stringWithNumberOfVowelsMoreThan30AndContainsContinuousVowels);
+
+        // Then
+        assertEquals("amommyamommya", result);
+    }
 }
