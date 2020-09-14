@@ -41,4 +41,17 @@ public class MommifierTest {
         // Then
         assertEquals("abcd", result);
     }
+
+    @Test
+    void should_return_itself_when_no_continuous_set_of_vowels() {
+        // Given
+        Mommifier mommifier = new Mommifier();
+        String stringWithNoContinuousVowels = "aeiou";
+
+        // When
+        String result = mommifier.mommy(stringWithNoContinuousVowels);
+
+        // Then
+        assertEquals("aeiou", result);
+    }
 }
