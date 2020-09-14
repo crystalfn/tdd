@@ -28,4 +28,17 @@ public class MommifierTest {
         // Then
         assertEquals("", result);
     }
+
+    @Test
+    void should_return_string_itself_when_number_of_vowels_less_than_30_percent_of_string_length() {
+        // Given
+        Mommifier mommifier = new Mommifier();
+        String stringWithNumberOfVowelsLessThan30 = "abcd";
+
+        // When
+        String result = mommifier.mommy(stringWithNumberOfVowelsLessThan30);
+
+        // Then
+        assertEquals("abcd", result);
+    }
 }
