@@ -1,5 +1,5 @@
 public class Mommifier {
-    public static String mommy(String givenString) {
+    public String mommy(String givenString) {
         if (givenString == null) {
             throw new NullPointerException();
         }
