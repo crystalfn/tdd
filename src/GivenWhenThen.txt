@@ -1,0 +1,49 @@
+1、给出 null，抛出异常；
+2、给出 空字符串，返回 空字符串；
+3、给出 字符串 但是元音字符个数之和小于总长度的 30%，返回 字符串本身；
+4、给出 字符串 元音字符个数之和大于总长度的 30%，但是没有连续的元音字符串，返回 字符串本身；
+5、给出 字符串 元音字符个数之和大于总长度的 30%，且有连续的元音字符串，返回 字符串插入 "mommy"。
+
+注意：对连续的理解，必须是相同的 元音字符 才能算是连续。
+
+Given_When_Then
+
+1、
+Given
+    Given null
+When
+    convert
+Then
+    throw NullPointerException
+
+2、
+Given
+    Given a empty String
+When
+    convert
+Then
+    return a empty String
+
+3、
+Given
+    Given a String the number of vowels are less than 30% of String length
+When
+    convert
+Then
+    return string itself
+
+4、
+Given
+    Given a String the number of vowels are more than 30% of String length but no continuous set of vowels
+When
+    convert
+Then
+    return string itself
+
+5、
+Given
+    Given a String the number of vowels are more than 30% of String length and contains continuous set of vowels
+When
+    convert
+Then
+    return String insert ‘mommy’ for each continuous set of vowels.
